@@ -12,7 +12,7 @@ import (
 var DB *mongo.Database
 
 func ConnectDB() {
-	clientOptions := options.Client().ApplyURI("mongodb+srv://ks2005755:2002@cluster0.rrwmkeb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+	clientOptions := options.Client().ApplyURI("url")
 	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
 	defer cancel()
 
